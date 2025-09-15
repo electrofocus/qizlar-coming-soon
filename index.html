@@ -2,25 +2,252 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=1512" />
     <title>Qizlar Collective</title>
+    <meta
+      name="description"
+      content="Qizlar is a self-organised grassroots collective of interdependent contemporary cultural and art practitioners and activists from Uzbekistan, founded in 2022"
+    />
+    <!-- CMU Typewriter Text from CDN -->
+    <link
+      href="https://fonts.cdnfonts.com/css/cmu-typewriter-text"
+      rel="stylesheet"
+    />
     <style>
       body {
+        margin: 0;
+        padding: 0;
+        font-family: "CMU Typewriter Text", monospace;
+        font-size: 20px;
+        font-weight: 200;
+        line-height: 1.3;
+        background: #fff;
+        color: #000;
         display: flex;
         justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #fff;
-        font-family: monospace;
-        letter-spacing: 1.5px;
       }
-      h1 {
-        font-size: 2em;
+
+      .page {
+        max-width: 1512px;
+        width: 100%; /* allows scaling */
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .logo {
+        display: block;
+        margin: 0 auto;
+        max-width: calc(100% - 36px); /* 18px left + 18px right */
+        height: auto;
+      }
+
+      .bio {
+        font-size: 29px;
+        max-width: 903px;
+        padding: 0 18px;
+        margin: 220px auto 240px;
+        line-height: 1.5;
+      }
+
+      section {
+        margin: 150px auto 0;
+        max-width: 1206px;
+        padding: 0;
+      }
+
+      section h2 {
+        font-size: 20px;
+        font-weight: 100;
+        margin: 0;
+        padding: 0;
+      }
+
+      section p {
+        font-size: 20px;
+        font-weight: 100;
+        margin: 0;
+        padding: 0;
+      }
+
+      .project-annotataion {
+        font-style: italic;
+      }
+
+      .placeholder {
+        background: #fca6a6;
+        max-width: 1206px;
+        width: 100%; /* responsive */
+        height: auto; /* optional if you want flexible height */
+        aspect-ratio: 16 / 9; /* keeps proportion if you want */
+        margin: 25px auto 0;
+      }
+
+      .project-image {
+        display: block;
+        margin: 25px auto 0; /* same spacing */
+        max-width: 1206px; /* image width from design */
+        width: 100%; /* responsive scaling */
+        height: auto; /* keeps proportions */
+      }
+
+      .supported-by {
+        margin: 25px auto 0;
+      }
+
+      footer {
+        margin: 120px 0 80px;
+      }
+
+      .newsletter {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .newsletter input[type="email"],
+      .newsletter button {
+        font-family: inherit;
+        font-size: 20px;
+        background: transparent;
+        border: none; /* no border in PDF */
+        outline: none;
+        padding: 0;
         color: #000;
+        line-height: 1;
+      }
+
+      .newsletter input[type="email"] {
+        width: 220px;
+        text-align: left;
+      }
+
+      .newsletter button {
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
-    <h1>Qizlar website will be here soon ❇️💟🔁</h1>
+    <div class="page">
+      <header>
+        <img src="pics/logo.png" alt="Qizlar Logo" class="logo" />
+        <p>
+          THIS IS A BETA VERSION<br />FULL WEBSITE IS IN COLLECTIVE CONSTRUCTION
+        </p>
+      </header>
+
+      <div class="bio">
+        <p>
+          Qizlar is a self-organised grassroots collective of interdependent
+          contemporary cultural and art practitioners and activists from
+          Uzbekistan, founded in 2022
+        </p>
+      </div>
+
+      <section>
+        <h2>DONT’T MISS THE CUE</h2>
+        <p class="project-annotataion">The National Pavilion of Uzbekistan</p>
+        <p>
+          at the 60th Venice Biennale of Contemporary Art<br />
+          2024
+        </p>
+        <img
+          src="gifs/DONTMISSTHECUE.gif"
+          alt="DON’T MISS THE CUE"
+          class="project-image"
+        />
+        <p class="supported-by">
+          SUPPORTED BY<br />
+          The Art and Culture Development Foundation of the Republic of
+          Uzbekistan,<br />
+          CCA Tashkent
+        </p>
+      </section>
+
+      <section>
+        <h2>TEMPORARY OFFICE</h2>
+        <p class="project-annotataion">immersive performance</p>
+        <p>
+          in collaboration with generalkunst<br />
+          2024–2025
+        </p>
+        <img
+          src="gifs/TEMPORARYOFFICE.gif"
+          alt="TEMPORARY OFFICE"
+          class="project-image"
+        />
+        <p class="supported-by">
+          SUPPORTED BY<br />
+          Art Station Samarkand, 139 Documentary Center, Arts Council Korea
+        </p>
+      </section>
+
+      <section>
+        <h2>QizGap</h2>
+        <p class="project-annotataion">annual festival on March 8th</p>
+        <p>
+          with experts, creators, NGOs, and grassroots initiatives<br />
+          2023–...
+        </p>
+        <img src="gifs/QIZGAP.gif" alt="QizGap" class="project-image" />
+        <p class="supported-by">
+          SUPPORTED BY<br />
+          Goethe Institut, Tashkent Film School, etc.
+        </p>
+      </section>
+
+      <section>
+        <h2>CyberQiz</h2>
+        <p class="project-annotataion">free educational online platform</p>
+        <p>
+          with Central Asian creators<br />
+          2024–...
+        </p>
+        <img src="gifs/CYBERQIZ.gif" alt="CyberQiz" class="project-image" />
+        <p class="supported-by">
+          SUPPORTED BY<br />
+          Women Win: Free STEM
+        </p>
+      </section>
+
+      <section>
+        <h2>BEFARQ ONALAR</h2>
+        <p class="project-annotataion">
+          podcast about motherhood and parenting in Uzbek
+        </p>
+        <p>2023-...</p>
+        <img
+          src="gifs/BEFARQONALAR.gif"
+          alt="BEFARQ ONALAR"
+          class="project-image"
+        />
+      </section>
+
+      <section>
+        <h2>IN THE CIRCLE OF MY HEART</h2>
+        <p class="project-annotataion">installation</p>
+        <p>
+          at ‘You are Here’ Exhibition<br />
+          2024-2025
+        </p>
+        <img
+          src="gifs/INTHECIRCLE.gif"
+          alt="IN THE CIRCLE OF MY HEART"
+          class="project-image"
+        />
+        <p class="supported-by">
+          SUPPORTED BY<br />
+          Fondazione Elpis
+        </p>
+      </section>
+
+      <footer>
+        <!-- <p>SPILLING THE TEA</p>
+        <form class="newsletter">
+          <input type="email" placeholder="E-mail..." required />
+          <button type="submit">Subscribe</button>
+        </form> -->
+      </footer>
+    </div>
   </body>
 </html>
