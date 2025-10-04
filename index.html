@@ -263,13 +263,14 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script>
-      const SUPABASE_URL = "https://afhcenbwccyypirfeatb.supabase.co";
+      const SUPABASE_URL = "https://fqkpawihdfnpesjiarlo.supabase.co";
       const SUPABASE_ANON_KEY =
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFmaGNlbmJ3Y2N5eXBpcmZlYXRiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc5MjE2NDUsImV4cCI6MjA3MzQ5NzY0NX0.5bIy_YCcotJSyeCEp5m4_lT2uFTltSJS2c75U4q19_s";
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZxa3Bhd2loZGZucGVzamlhcmxvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAxMzY4MDAsImV4cCI6MjA2NTcxMjgwMH0.wBNBqdmgxtztcYBRBtV_eBkfiBbp03JhwCrWVUMXnQU";
 
       const supabase = window.supabase.createClient(
         SUPABASE_URL,
-        SUPABASE_ANON_KEY
+        SUPABASE_ANON_KEY,
+        { db: { schema: "myschema" } }
       );
 
       const form = document.querySelector(".newsletter");
@@ -282,7 +283,7 @@
         if (!email) return;
 
         const { error } = await supabase
-          .from("subscriptions")
+          .from("mail_subscriptions")
           .insert([{ email }]);
 
         if (error) {
